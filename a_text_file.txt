@@ -1,1 +1,194 @@
-ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEA4M8ukjCKrdfx5GOiG3dV1ILTVVtVu24IUpe7bX3xoBatlKbs4UOP/hCmFDGZAW0f205WUjjp4SdflG8NWYWWv7NYCd/1ovhO/EpAXxd4x0sHLLQGQjkoYCaDUhQWoFNPaYpPGW73oXNSA2KzYQhntEr29ZQ2ANn+Tzj0dISmBBQ4fwXXuQUtghnb0h1ucK1R5QkEp0juVqDwXk6rNiMwtoxuRQg2BvwGEPXVbs2Dpv9iQkL09XIggpYocsKSjKyc2L1kQgX5x0/8V3Scency8XP+o3uTvxZi/SD2fJV7NxT8BPmAlXr1XU0qIiTdHFNUEwuQcT03Zqs8CFPYSknmRQ== bjcarson75@yahoo.com
+Last login: Sun Oct 30 16:57:55 on ttys000
+unknowne0f847098574:~ bjcarson75$ cd /Users
+unknowne0f847098574:Users bjcarson75$ cd /bjcarson75
+-bash: cd: /bjcarson75: No such file or directory
+unknowne0f847098574:Users bjcarson75$ su
+Password:
+sh-3.2# 
+sh-3.2# exit
+exit
+unknowne0f847098574:Users bjcarson75$ cd /bjcarson75
+-bash: cd: /bjcarson75: No such file or directory
+unknowne0f847098574:Users bjcarson75$ cd /Documents
+-bash: cd: /Documents: No such file or directory
+unknowne0f847098574:Users bjcarson75$ cd Documents
+-bash: cd: Documents: No such file or directory
+unknowne0f847098574:Users bjcarson75$ cd bjcarson75
+unknowne0f847098574:~ bjcarson75$ cd Documents
+unknowne0f847098574:Documents bjcarson75$ cd Work
+unknowne0f847098574:Work bjcarson75$ cd bonniedemo
+unknowne0f847098574:bonniedemo bjcarson75$ git remote add origin git@github.com:bcarson/BonnieTest.git
+fatal: remote origin already exists.
+unknowne0f847098574:bonniedemo bjcarson75$ git push -u origin master
+error: src refspec master does not match any.
+error: failed to push some refs to 'git@github.com:bcarson/BonnieTest.git'
+unknowne0f847098574:bonniedemo bjcarson75$ git init
+Reinitialized existing Git repository in /Users/bjcarson75/Documents/Work/bonniedemo/.git/
+unknowne0f847098574:bonniedemo bjcarson75$ cd .git
+unknowne0f847098574:.git bjcarson75$ git push -u origin master
+error: src refspec master does not match any.
+error: failed to push some refs to 'git@github.com:bcarson/BonnieTest.git'
+unknowne0f847098574:.git bjcarson75$ git push origin bonniedemo:master
+error: src refspec bonniedemo does not match any.
+error: failed to push some refs to 'git@github.com:bcarson/BonnieTest.git'
+unknowne0f847098574:.git bjcarson75$ cd ..
+unknowne0f847098574:bonniedemo bjcarson75$ git push origin bonniedemo:master
+error: src refspec bonniedemo does not match any.
+error: failed to push some refs to 'git@github.com:bcarson/BonnieTest.git'
+unknowne0f847098574:bonniedemo bjcarson75$ git commit -m "first commit"
+# On branch master
+#
+# Initial commit
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	.gitignore
+#	Gemfile
+#	Gemfile.lock
+#	README
+#	Rakefile
+#	app/
+#	config.ru
+#	config/
+#	db/
+#	doc/
+#	lib/
+#	log/
+#	public/
+#	script/
+#	test/
+#	vendor/
+nothing added to commit but untracked files present (use "git add" to track)
+unknowne0f847098574:bonniedemo bjcarson75$ git push origin bonniedemo:master
+error: src refspec bonniedemo does not match any.
+error: failed to push some refs to 'git@github.com:bcarson/BonnieTest.git'
+unknowne0f847098574:bonniedemo bjcarson75$ git push -u origin master
+error: src refspec master does not match any.
+error: failed to push some refs to 'git@github.com:bcarson/BonnieTest.git'
+unknowne0f847098574:bonniedemo bjcarson75$ git remote add origin git@github.com:bcarson/BonnieTest.got
+fatal: remote origin already exists.
+unknowne0f847098574:bonniedemo bjcarson75$ git remote add origin git@github.com:bcarson/BonnieTest.git
+fatal: remote origin already exists.
+unknowne0f847098574:bonniedemo bjcarson75$ git push -u origin master
+error: src refspec master does not match any.
+error: failed to push some refs to 'git@github.com:bcarson/BonnieTest.git'
+unknowne0f847098574:bonniedemo bjcarson75$ git push
+No refs in common and none specified; doing nothing.
+Perhaps you should specify a branch such as 'master'.
+fatal: The remote end hung up unexpectedly
+error: failed to push some refs to 'git@github.com:bcarson/BonnieTest.git'
+unknowne0f847098574:bonniedemo bjcarson75$ git push -u master
+fatal: 'master' does not appear to be a git repository
+fatal: The remote end hung up unexpectedly
+unknowne0f847098574:bonniedemo bjcarson75$ git add a_text_file.txt
+fatal: pathspec 'a_text_file.txt' did not match any files
+unknowne0f847098574:bonniedemo bjcarson75$ git add a_text_file.txt
+unknowne0f847098574:bonniedemo bjcarson75$ git commit -m "Initial commit."
+[master (root-commit) 640cbe3] Initial commit.
+ Committer: Bonnie Carson <bjcarson75@unknowne0f847098574.gateway.2wire.net>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 files changed, 1 insertions(+), 0 deletions(-)
+ create mode 100644 a_text_file.txt
+unknowne0f847098574:bonniedemo bjcarson75$ git config --global user.name "Bonnie"
+unknowne0f847098574:bonniedemo bjcarson75$ git config --global user.email "bjcarson75@yahoo.com"
+unknowne0f847098574:bonniedemo bjcarson75$ git push
+No refs in common and none specified; doing nothing.
+Perhaps you should specify a branch such as 'master'.
+fatal: The remote end hung up unexpectedly
+error: failed to push some refs to 'git@github.com:bcarson/BonnieTest.git'
+unknowne0f847098574:bonniedemo bjcarson75$ git push -u master
+fatal: 'master' does not appear to be a git repository
+fatal: The remote end hung up unexpectedly
+unknowne0f847098574:bonniedemo bjcarson75$ git remote add origin git@github.com:bcarson/BonnieTest.git
+fatal: remote origin already exists.
+unknowne0f847098574:bonniedemo bjcarson75$ git push -u origin master
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 583 bytes, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To git@github.com:bcarson/BonnieTest.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+unknowne0f847098574:bonniedemo bjcarson75$ git add .
+unknowne0f847098574:bonniedemo bjcarson75$ git commit -m "second commit."[master e803a4d] second commit.
+ 45 files changed, 1232 insertions(+), 0 deletions(-)
+ create mode 100644 .gitignore
+ create mode 100644 Gemfile
+ create mode 100644 Gemfile.lock
+ create mode 100644 README
+ create mode 100644 Rakefile
+ create mode 100644 app/assets/images/rails.png
+ create mode 100644 app/assets/javascripts/application.js
+ create mode 100644 app/assets/javascripts/say.js.coffee
+ create mode 100644 app/assets/stylesheets/application.css
+ create mode 100644 app/assets/stylesheets/say.css.scss
+ create mode 100644 app/controllers/application_controller.rb
+ create mode 100644 app/controllers/say_controller.rb
+ create mode 100644 app/helpers/application_helper.rb
+ create mode 100644 app/helpers/say_helper.rb
+ create mode 100644 app/mailers/.gitkeep
+ create mode 100644 app/models/.gitkeep
+ create mode 100644 app/views/layouts/application.html.erb
+ create mode 100644 app/views/say/goodbye.html.erb
+ create mode 100644 app/views/say/hello.html.erb
+ create mode 100644 config.ru
+ create mode 100644 config/application.rb
+ create mode 100644 config/boot.rb
+ create mode 100644 config/database.yml
+ create mode 100644 config/environment.rb
+ create mode 100644 config/environments/development.rb
+ create mode 100644 config/environments/production.rb
+ create mode 100644 config/environments/test.rb
+ create mode 100644 config/initializers/backtrace_silencers.rb
+ create mode 100644 config/initializers/inflections.rb
+ create mode 100644 config/initializers/mime_types.rb
+ create mode 100644 config/initializers/secret_token.rb
+ create mode 100644 config/initializers/session_store.rb
+ create mode 100644 config/initializers/wrap_parameters.rb
+ create mode 100644 config/locales/en.yml
+ create mode 100644 config/routes.rb
+ create mode 100644 db/seeds.rb
+ create mode 100644 doc/README_FOR_APP
+ create mode 100644 lib/assets/.gitkeep
+ create mode 100644 lib/tasks/.gitkeep
+ create mode 100644 log/.gitkeep
+ create mode 100644 public/404.html
+ create mode 100644 public/422.html
+ create mode 100644 public/500.html
+ create mode 100644 public/favicon.ico
+ create mode 100644 public/index.html
+ create mode 100644 public/robots.txt
+ create mode 100755 script/rails
+ create mode 100644 test/fixtures/.gitkeep
+ create mode 100644 test/functional/.gitkeep
+ create mode 100644 test/functional/say_controller_test.rb
+ create mode 100644 test/integration/.gitkeep
+ create mode 100644 test/performance/browsing_test.rb
+ create mode 100644 test/test_helper.rb
+ create mode 100644 test/unit/.gitkeep
+ create mode 100644 test/unit/helpers/say_helper_test.rb
+ create mode 100644 vendor/assets/stylesheets/.gitkeep
+ create mode 100644 vendor/plugins/.gitkeep
+unknowne0f847098574:bonniedemo bjcarson75$ git push -u origin master
+Counting objects: 76, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (61/61), done.
+Writing objects: 100% (75/75), 26.66 KiB, done.
+Total 75 (delta 2), reused 0 (delta 0)
+To git@github.com:bcarson/BonnieTest.git
+   640cbe3..e803a4d  master -> master
+Branch master set up to track remote branch master from origin.
+unknowne0f847098574:bonniedemo bjcarson75$ 
+
